@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fa_icon_heart">&#xf004;</string>
+    <string name="fa_icon_left_arrow">&#xf0e2;</string>
+    <string name="fa_icon_right_arrow">&#xf01e;</string>
+    <string name="fa_icon_round_check">&#xf058;</string>
+    <string name="fa_icon_circle">&#xf111;</string>
+    <string name="fa_icon_user">&#xf007;</string>
+    <string name="fa_icon_street_view">&#xf21d;</string>
+    <string name="fa_icon_address_card">&#xf2bb;</string>
+    <string name="fa_icon_pin">&#xf276;</string>
+    <string name="fa_icon_globe">&#xf0ac;</string>
+    <string name="fa_icon_map_sign">&#xf277;</string>
+    <string name="fa_icon_map_marker">&#xf041;</string>
+    <string name="fa_credit_card">&#xf283;</string>
+    <string name="fa_credit_card_light">&#xf09d;</string>
+    <string name="fa_visa">&#xf1f0;</string>
+    <string name="fa_master_card">&#xf1f1;</string>
+    <string name="fa_phone">&#xf095;</string>
+    <string name="fa_envelope">&#xf0e0;</string>
+    <string name="fa_info">&#xf129;</string>
+    <string name="fa_send">&#xf1d8;</string>
+    <string name="fa_envelope2">Contact me \t &#xf0e0;</string>
+    <string name="fa_send2">Send email \t &#xf1d8;</string>
+    <string name="fa_phone2">Call me \t &#xf095;</string>
+</resources>

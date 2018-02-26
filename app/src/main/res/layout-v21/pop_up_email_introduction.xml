@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_rectangle_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:padding="@dimen/medium_padding"
+        android:layout_margin="@dimen/medium_padding"
+        android:textSize="@dimen/medium_text_size"
+        android:gravity="top"
+        android:hint="What would you like to tell me?"
+        android:elevation="@dimen/medium_elevation"
+        android:background="@drawable/rounded_less_rectangle_stroke_grey"
+        android:id="@+id/edit_text_pop_up_introduction"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <TextView
+        android:id="@+id/text_send_pop_up_introduction"
+        android:layout_width="@dimen/medium_height"
+        android:layout_height="@dimen/small_height"
+        android:text="@string/fa_send"
+        android:gravity="center"
+        android:elevation="@dimen/medium_elevation"
+        android:shadowDx="@integer/shadow_Dx"
+        android:shadowDy="@integer/shadow_Dy"
+        android:shadowRadius="@integer/shadow_radius"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/medium_icon_size"
+        android:fontFamily="@font/fontawesome"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_pop_up_introduction"
+        app:layout_constraintRight_toRightOf="parent"/>
+</android.support.constraint.ConstraintLayout>

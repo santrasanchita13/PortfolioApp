@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Pakhi\'s Portfolio</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="default_error">Error!!</string>
+    <string name="default_text">Default text</string>
+    <string name="default_long_text">He found what he was looking for in his inside pocket. It seemed to be a
+silver cigarette lighter. He flicked it open, held it up in the air, and
+clicked it. The nearest street lamp went out with a little pop. He
+clicked it again — the next lamp flickered into darkness. Twelve times
+he clicked the Put-Outer, until the only lights left on the whole street
+were two tiny pinpricks in the distance, which were the eyes of the cat
+watching him. If anyone looked out of their window now, even beady-eyed
+Mrs. Dursley, they wouldn\'t be able to see anything that was happening
+down on the pavement. Dumbledore slipped the Put-Outer back inside his
+cloak and set off down the street toward number four, where he sat down
+on the wall next to the cat.</string>
+    <string name="list_topic">Pakhi\'s showcase</string>
+    <string name="my_name">Pakhi</string>
+    <string name="introduction_line">\"I have found art in science and science in art\"</string>
+    <string name="introduction_card_line">\"My dream is to create!\n
+        Putting pieces of my soul into my work\"</string>
+
+    <string name="skills_card_line">\"10000 hours\n
+        of effort creates 10 seconds of magic.\"</string>
+
+    <string name="interests_card_line">\"Did we even live\n
+        if our eyes didn\'t fill up with emotions sometimes!\"</string>
+
+    <string name="contact_card_line">\"If you would like\n
+        me to work for you, I\'d love to hear from you!\"</string>
+    
+    <string name="interests_creative_arts">I\'ve always loved deep discussions about literature, evenings filled with music and
+        rooms filled with art. The process of creating stories, music, movies, art is fascinating to me.
+        That\'s why I like software development so much. It lets me create usable art.</string>
+    
+    <string name="interests_travel">A human mind is extremely noisy most of the time. There are certain times, though,
+        when it shuts down and just absorbs without analysis. For most people, sports does that. For me, travel brings that freedom.</string>
+    
+    <string name="interests_food">The quantity of what I eat is never a lot, but I love trying diverse kinds of food.
+        The rich aroma of eastern spices, the bland but alluring taste of western cheese, there must be a reason
+        why nature gave us a sense of taste.</string>
+    
+    <string name="skills_android">I\'ve been working on Android app development since last 3 years and have been programming for 12 years.
+        Most of the apps I\'ve developed were for TCS where I worked for 2 years. Access to those is not possible, thus I made
+        this app as a showcase. Everything from design, development to performance testing of this app is done by me
+        and I put a lot of importance on maintainability of the code. So, apart from giving high performance,
+        my code is architecturally sound.</string>
+    <string name="skills_spring">I make my server-side using Spring framework and use Docker to deploy the code.
+        I\'m comfortable with frontend-server integration, file operations, db operations and social authentications.
+        For the server-side, speed is the most important aspect. I ensure it with continuous research into latest
+        improvements and optimizing my code.</string>
+    <string name="skills_others">I have done some minor works on web development, machine learning and augmented reality.
+        I\'ve gone through the background aspects of these technologies, such as understanding how machine learning algorithms work.
+        However, my interest lies more in using those algorithms to solve user-level problems.
+        I plan to develop these skills in the future.</string>
+
+    <string name="main_activity_info">I\'m calling this app my showcase because my other apps are not public. I\'ve shown a small preview of
+    how my apps tend to feel. You\'ll notice the performance of the app is high even with high resolution images. Each transition,
+    click, swipe action is added while keeping performance in mind.</string>
+    
+    <string name="introduction_activity_info">Notice that the design is logical and the gist of the page can be understood
+        at a glance without reading a lot because of the graphs. The design is different for older phones and landscape mode.</string>
+    
+    <string name="skills_activity_info">The pie chart is a custom component i.e. it\'s created from scratch unlike
+        let\'s say a button which is provided by the Android framework. It fits with the logic
+        of showing my strongest skills in one place, as well as showing my capability of creating custom components when needed.</string>
+
+    <string name="interests_activity_info">I kept this page a bit glamorous because it shows my interest in bringing challenging
+        designs to life. The design and the positions of the images were a challenge. There was also a lot of struggle and
+        calculation involved in ensuring the correct item moves to the center on click.</string>
+
+    <string name="contact_hint">I would love to develop apps for you, please message me here…</string>
+
+    <string name="transition_name_image_launcher">imageSplash</string>
+
+    <string name="transition_name_image_view_design_item">imageViewDesignItem%d</string>
+    <string name="transition_name_image_view_design_item_container">imageViewDesignItemContainer%d</string>
+    <string name="transition_name_text_view_design_item_title">textViewDesignItemTitle%d</string>
+    <string name="transition_name_text_view_design_item_heart">textViewDesignItemHeart%d</string>
+
+    <string name="transition_name_text_item_profile_introduction">textItemProfileIntroduction%d</string>
+    <string name="transition_name_image_item_profile_introduction">imageItemProfileIntroduction%d</string>
+    <string name="transition_name_image_bg_item_profile_introduction">imageBgItemProfileIntroduction%d</string>
+
+    <string name="transition_name_image_view_skills">imageViewSkills</string>
+    <string name="transition_name_text_view_skills">textViewSkills</string>
+    <string name="transition_name_image_view_skills_container">imageViewSkillsContainer</string>
+
+    <string name="transition_name_text_view_contact">textViewContact</string>
+</resources>

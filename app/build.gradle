@@ -1,0 +1,112 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    defaultConfig {
+        applicationId "com.santra.sanchita.portfolioapp"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        pickFirst 'META-INF/LICENSE.txt' // picks the JavaMail license file
+        exclude 'META-INF/gfprobe-provider.xml'
+        exclude 'META-INF/hk2-locator/default'
+        exclude 'META-INF/javamail.charset.map'
+        exclude 'META-INF/javamail.default.address.map'
+        exclude 'META-INF/javamail.default.providers'
+        exclude 'META-INF/mailcap'
+        exclude 'META-INF/mailcap.default'
+        exclude 'META-INF/mimetypes.default'
+        exclude 'META-INF/rxjava.properties'
+        exclude 'META-INF/services/com.fasterxml.jackson.core.JsonFactory'
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+greendao {
+    schemaVersion 1
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "com.android.support:multidex:$rootProject.ext.multidexVersion"
+
+    implementation "com.android.support:appcompat-v7:$rootProject.ext.supportLibraryVersion"
+    implementation "com.android.support:design:$rootProject.ext.supportLibraryVersion"
+    implementation "com.android.support:support-dynamic-animation:$rootProject.ext.supportLibraryVersion"
+    implementation "com.android.support:recyclerview-v7:$rootProject.ext.supportLibraryVersion"
+    implementation "com.android.support.constraint:constraint-layout:$rootProject.ext.constrainLayoutVersion"
+    implementation "com.google.android.gms:play-services-auth:$rootProject.ext.googlePlayServicesVersion"
+    implementation "com.google.api-client:google-api-client:$rootProject.ext.googleClientLibraryVersion"
+
+    //java mail
+    implementation "com.sun.mail:android-mail:$rootProject.ext.javaMailVersion"
+    implementation "com.sun.mail:android-activation:$rootProject.ext.javaMailVersion"
+
+    //logs
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timerLoggerVersion"
+
+    // dependency injection
+    implementation "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+    provided "javax.annotation:jsr250-api:$rootProject.ext.javaxAnnotationVersion"
+    implementation "javax.inject:javax.inject:$rootProject.ext.javaxInjectVersion"
+
+    // code generator for view
+    implementation "com.jakewharton:butterknife:$rootProject.ext.butterKnifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterKnifeVersion"
+
+    // database
+    implementation "org.greenrobot:greendao:$rootProject.ext.greenDaoVersion"
+    implementation "net.zetetic:android-database-sqlcipher:$rootProject.ext.sqlcipherVersion"
+
+    //retrofit
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofitVersion"
+
+    //rxjava
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxJavaVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxJavaAndroidVersion"
+    implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$rootProject.ext.rxJavaRetrofitAdapterVersion"
+
+    //unit testing
+    implementation "com.android.support.test.espresso:espresso-idling-resource:$rootProject.ext.espressoVersion"
+    testImplementation "junit:junit:$rootProject.ext.junitVersion"
+    testImplementation "org.mockito:mockito-all:$rootProject.ext.mockitoVersion"
+    testImplementation "org.hamcrest:hamcrest-all:$rootProject.ext.hamcrestVersion"
+    testImplementation "org.powermock:powermock-module-junit4:$rootProject.ext.powerMockito"
+    testImplementation "org.powermock:powermock-api-mockito:$rootProject.ext.powerMockito"
+    androidTestImplementation "com.android.support.test:runner:$rootProject.ext.runnerVersion"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$rootProject.ext.espressoVersion"
+    androidTestImplementation "com.android.support.test.espresso:espresso-contrib:$rootProject.ext.espressoVersion"
+}
+
+configurations.all {
+    resolutionStrategy.force "com.android.support:support-annotations:$rootProject.ext.supportLibraryVersion"
+    resolutionStrategy.force "com.google.code.findbugs:jsr305:$rootProject.ext.findBugsVersion"
+    exclude module: 'httpclient'
+    exclude module: 'commons-logging'
+}
+
+apply plugin: 'com.google.gms.google-services'

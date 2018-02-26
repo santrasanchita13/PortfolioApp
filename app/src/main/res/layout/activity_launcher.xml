@@ -1,0 +1,18 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:id="@+id/frame_layout_splash">
+    <ImageView
+        android:id="@+id/image_launcher"
+        android:layout_width="@dimen/medium_height"
+        android:layout_height="@dimen/medium_height"
+        android:src="@drawable/logo_image"
+        android:elevation="@dimen/large_elevation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+</android.support.constraint.ConstraintLayout>

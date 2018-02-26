@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraint_layout_design_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+    <ImageView
+        android:id="@+id/image_design_details_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@null"
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/text_design_details_title"
+        android:layout_width="@dimen/large_width"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/double_medium_padding"
+        android:shadowColor="@color/grey"
+        android:shadowDx="@integer/shadow_Dx"
+        android:shadowDy="@integer/shadow_Dy"
+        android:shadowRadius="@integer/shadow_radius"
+        android:text="@string/default_text"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/large_text_size"
+        app:layout_constraintLeft_toLeftOf="@+id/image_design_details_bg"
+        app:layout_constraintRight_toRightOf="@+id/image_design_details_bg"
+        app:layout_constraintTop_toTopOf="@+id/image_design_details_bg" />
+
+    <ImageView
+        android:id="@+id/image_design_details_square_bg"
+        android:layout_width="@dimen/parent_width"
+        android:layout_height="@dimen/parent_width"
+        android:alpha="0"
+        android:visibility="gone"
+        android:rotation="45"
+        android:scaleType="fitXY"
+        android:src="@color/white"
+        android:background="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:layout_width="@dimen/medium_height"
+        android:layout_height="@dimen/medium_height"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/double_medium_padding"
+        android:paddingTop="@dimen/double_medium_padding"
+        android:alpha="0"
+        android:text="@string/fa_icon_right_arrow"
+        android:shadowColor="@color/grey"
+        android:shadowDx="@integer/shadow_Dx"
+        android:shadowDy="@integer/shadow_Dy"
+        android:shadowRadius="@integer/shadow_radius"
+        android:fontFamily="@font/fontawesome"
+        android:id="@+id/text_design_details_left_arrow"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_text_size"
+        android:layout_marginBottom="@dimen/double_medium_padding"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_design_details_heart"
+        />
+
+    <TextView
+        android:layout_width="@dimen/medium_height"
+        android:layout_height="@dimen/medium_height"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="@dimen/double_medium_padding"
+        android:paddingTop="@dimen/double_medium_padding"
+        android:alpha="0"
+        android:text="@string/fa_icon_left_arrow"
+        android:shadowColor="@color/grey"
+        android:shadowDx="@integer/shadow_Dx"
+        android:shadowDy="@integer/shadow_Dy"
+        android:shadowRadius="@integer/shadow_radius"
+        android:fontFamily="@font/fontawesome"
+        android:id="@+id/text_design_details_right_arrow"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_text_size"
+        android:layout_marginBottom="@dimen/double_medium_padding"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_design_details_heart"
+        />
+
+    <ImageView
+        android:id="@+id/image_design_details_middle"
+        android:layout_width="@dimen/medium_height"
+        android:layout_height="@dimen/medium_height"
+        android:rotation="45"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineHorizontal"
+        android:layout_marginTop="@dimen/parent_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_design_details_left"
+        android:layout_width="@dimen/medium_height"
+        android:layout_height="@dimen/medium_height"
+        android:rotation="45"
+        android:alpha="0.5"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@color/white"
+        android:layout_marginEnd="@dimen/double_medium_padding"
+        android:layout_marginTop="@dimen/parent_size"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineHorizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineVertical"/>
+
+    <ImageView
+        android:id="@+id/image_design_details_right"
+        android:layout_width="@dimen/medium_height"
+        android:layout_height="@dimen/medium_height"
+        android:rotation="45"
+        android:alpha="0.5"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@color/white"
+        android:layout_marginStart="@dimen/double_medium_padding"
+        android:layout_marginTop="@dimen/parent_size"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineHorizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineVertical" />
+
+    <ImageView
+        android:id="@+id/image_design_details_content"
+        android:layout_width="@dimen/large_height"
+        android:layout_height="@dimen/large_height"
+        android:rotation="45"
+        android:scaleType="fitXY"
+        android:src="@color/white"
+        android:background="@null"
+        android:layout_marginTop="@dimen/parent_size"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_design_details_content_title"
+        android:layout_width="@dimen/medium_width"
+        android:layout_height="@dimen/small_height"
+        android:gravity="center_horizontal"
+        android:text="@string/default_text"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/large_text_size"
+        app:layout_constraintLeft_toLeftOf="@+id/image_design_details_content"
+        app:layout_constraintRight_toRightOf="@+id/image_design_details_content"
+        app:layout_constraintTop_toTopOf="@+id/image_design_details_content" />
+
+    <TextView
+        android:id="@+id/text_design_details_content_desc"
+        android:layout_width="@dimen/large_width"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:scrollbars="none"
+        android:maxLines="7"
+        android:text="@string/default_long_text"
+        app:layout_constraintLeft_toLeftOf="@+id/image_design_details_content"
+        app:layout_constraintRight_toRightOf="@+id/image_design_details_content"
+        app:layout_constraintTop_toBottomOf="@+id/text_design_details_content_title" />
+
+    <TextView
+        android:layout_width="@dimen/small_height"
+        android:layout_height="@dimen/small_height"
+        android:paddingTop="@dimen/medium_padding"
+        android:gravity="center"
+        android:text="@string/fa_icon_heart"
+        android:shadowColor="@color/grey"
+        android:shadowDx="@integer/shadow_Dx"
+        android:shadowDy="@integer/shadow_Dy"
+        android:shadowRadius="@integer/shadow_radius"
+        android:fontFamily="@font/fontawesome"
+        android:id="@+id/text_design_details_heart"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_icon_size"
+        android:layout_marginTop="@dimen/medium_padding"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineHorizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_info_design_details"
+        android:layout_width="@dimen/container_side_width"
+        android:layout_height="@dimen/container_side_width"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/fa_info"
+        android:textSize="@dimen/large_text_size"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/fontawesome"
+        android:background="@drawable/oval_white"
+        android:layout_margin="@dimen/medium_padding"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+</android.support.constraint.ConstraintLayout>

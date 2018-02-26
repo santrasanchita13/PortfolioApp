@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="main_activity_info">I\'m calling this app my showcase because my other apps are not public. I\'ve shown a small preview of
+    how my apps tend to feel. You\'ll notice the performance of the app is high even with 3D layouts and animations. Each transition,
+    click, swipe action is added while keeping performance in mind.</string>
+
+    <string name="introduction_activity_info">Notice that the animation from one page to another is logical and mild.
+        The design is logical and the gist of the page can be understood at a glance without reading a lot because of the graphs.</string>
+
+    <string name="skills_activity_info">The pie chart is a custom component i.e. it\'s created from scratch unlike
+        let\'s say a button which is provided by the Android framework. It fits with the logic
+        of showing my strongest skills in one place, as well as showing my capability of creating custom components when needed.</string>
+
+    <string name="interests_activity_info">I kept this page a bit glamorous because it shows my interest in bringing challenging
+        designs to life. The design and the positions of the images were a challenge. There was also a lot of struggle and
+        calculation involved in ensuring the correct item moves to the center on click.</string>
+
+</resources>
