@@ -11,3 +11,13 @@ Email - pakhi.this@gmail.com
 
 Mob - 9002006213
 
+![screenshot](https://github.com/santrasanchita13/PortfolioApp/blob/master/Screenshot_20180214-124522.jpg)
+
+![screenshot](https://github.com/santrasanchita13/PortfolioApp/blob/master/Screenshot_20180214-124533.jpg)
+
+![screenshot](https://github.com/santrasanchita13/PortfolioApp/blob/master/Screenshot_20180214-124548.jpg)
+
+![screenshot](https://github.com/santrasanchita13/PortfolioApp/blob/master/Screenshot_20180214-124558.jpg)
+
+![screenshot](https://github.com/santrasanchita13/PortfolioApp/blob/master/Screenshot_20180214-125754.jpg)
+
