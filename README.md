@@ -7,6 +7,8 @@ The app has material design, animations, custom components and Google API integr
 
 If you have interesting and challenging work for Android development, please use this app to assess my skills and contact me.
 
+https://play.google.com/store/apps/details?id=com.santra.sanchita.portfolioapp
+
 Email - pakhi.this@gmail.com
 
 Mob - 9002006213
