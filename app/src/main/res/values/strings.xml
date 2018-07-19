@@ -51,6 +51,10 @@ on the wall next to the cat.</string>
         I\'m comfortable with frontend-server integration, file operations, db operations and social authentications.
         For the server-side, speed is the most important aspect. I ensure it with continuous research into latest
         improvements and optimizing my code.</string>
+    <string name="skills_node">I make my server-side using Node.js and use Google cloud to deploy the code.
+        I\'m comfortable with frontend-server integration, file operations, db operations and social authentications.
+        For the server-side, speed is the most important aspect. I ensure it with continuous research into latest
+        improvements and optimizing my code.</string>
     <string name="skills_others">I have done some minor works on web development, machine learning and augmented reality.
         I\'ve gone through the background aspects of these technologies, such as understanding how machine learning algorithms work.
         However, my interest lies more in using those algorithms to solve user-level problems.

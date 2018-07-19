@@ -71,7 +71,7 @@ dependencies {
     // dependency injection
     implementation "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
     annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
-    provided "javax.annotation:jsr250-api:$rootProject.ext.javaxAnnotationVersion"
+    compileOnly "javax.annotation:jsr250-api:$rootProject.ext.javaxAnnotationVersion"
     implementation "javax.inject:javax.inject:$rootProject.ext.javaxInjectVersion"
 
     // code generator for view
@@ -100,6 +100,10 @@ dependencies {
     androidTestImplementation "com.android.support.test:runner:$rootProject.ext.runnerVersion"
     androidTestImplementation "com.android.support.test.espresso:espresso-core:$rootProject.ext.espressoVersion"
     androidTestImplementation "com.android.support.test.espresso:espresso-contrib:$rootProject.ext.espressoVersion"
+
+    // AndroidJUnitRunner and JUnit Rules
+    androidTestImplementation "com.android.support.test:runner:$rootProject.ext.testRulesVersion"
+    androidTestImplementation "com.android.support.test:rules:$rootProject.ext.testRulesVersion"
 }
 
 configurations.all {

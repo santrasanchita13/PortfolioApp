@@ -95,7 +95,7 @@ public class SkillsActivity extends BaseActivity implements SkillsMvpView {
         Resources res = getResources();
 
         pieChartSkills.addItem("Android", 5f, res.getColor(R.color.colorPrimary));
-        pieChartSkills.addItem("Spring", 3f, res.getColor(R.color.colorPrimary));
+        pieChartSkills.addItem("Node.js", 3f, res.getColor(R.color.colorPrimary));
         pieChartSkills.addItem("Others", 2f, res.getColor(R.color.colorPrimary));
 
         textSkillsTitle.setText("Android development");
@@ -108,8 +108,8 @@ public class SkillsActivity extends BaseActivity implements SkillsMvpView {
                     textSkillsDesc.setText(getString(R.string.skills_android));
                     break;
                 case 1:
-                    textSkillsTitle.setText("Spring framework");
-                    textSkillsDesc.setText(getString(R.string.skills_spring));
+                    textSkillsTitle.setText("Node.js");
+                    textSkillsDesc.setText(getString(R.string.skills_node));
                     break;
                 case 2:
                     textSkillsTitle.setText("Other skills");
