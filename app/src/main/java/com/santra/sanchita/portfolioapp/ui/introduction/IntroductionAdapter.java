@@ -127,12 +127,6 @@ public class IntroductionAdapter extends RecyclerView.Adapter<IntroductionAdapte
                     if (context.checkSelfPermission(Manifest.permission.WRITE_CONTACTS) != PackageManager.PERMISSION_GRANTED) {
                         permissionList.add(android.Manifest.permission.WRITE_CONTACTS);
                     }
-                    if (context.checkSelfPermission(Manifest.permission.WRITE_CALL_LOG) != PackageManager.PERMISSION_GRANTED) {
-                        permissionList.add(android.Manifest.permission.WRITE_CALL_LOG);
-                    }
-                    if (context.checkSelfPermission(Manifest.permission.READ_CALL_LOG) != PackageManager.PERMISSION_GRANTED) {
-                        permissionList.add(android.Manifest.permission.READ_CALL_LOG);
-                    }
                     if (permissionList.size() > 0) {
                         ((IntroductionActivity) context).requestPermissions(permissionList.toArray(new String[permissionList.size()]), Constants.CALL_PERMISSION);
                         permissionList.clear();

@@ -23,6 +23,7 @@ public class AppDbHelper implements DbHelper {
     @Inject
     public AppDbHelper(DbOpenHelper dbOpenHelper) {
         daoSession = new DaoMaster(dbOpenHelper.getWritableDb()).newSession();
+        daoSession.getDesignItemDao().deleteAll();
     }
 
     @Override

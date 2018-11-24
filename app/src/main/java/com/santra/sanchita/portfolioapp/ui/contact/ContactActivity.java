@@ -108,12 +108,6 @@ public class ContactActivity extends BaseActivity implements ContactMvpView {
                 if (checkSelfPermission(Manifest.permission.WRITE_CONTACTS) != PackageManager.PERMISSION_GRANTED) {
                     permissionList.add(android.Manifest.permission.WRITE_CONTACTS);
                 }
-                if (checkSelfPermission(Manifest.permission.WRITE_CALL_LOG) != PackageManager.PERMISSION_GRANTED) {
-                    permissionList.add(android.Manifest.permission.WRITE_CALL_LOG);
-                }
-                if (checkSelfPermission(Manifest.permission.READ_CALL_LOG) != PackageManager.PERMISSION_GRANTED) {
-                    permissionList.add(android.Manifest.permission.READ_CALL_LOG);
-                }
                 if (permissionList.size() > 0) {
                     requestPermissions(permissionList.toArray(new String[permissionList.size()]), Constants.DELETE_CONTACT_PERMISSION);
                     permissionList.clear();
@@ -161,12 +155,6 @@ public class ContactActivity extends BaseActivity implements ContactMvpView {
             }
             if (checkSelfPermission(Manifest.permission.WRITE_CONTACTS) != PackageManager.PERMISSION_GRANTED) {
                 permissionList.add(android.Manifest.permission.WRITE_CONTACTS);
-            }
-            if (checkSelfPermission(Manifest.permission.WRITE_CALL_LOG) != PackageManager.PERMISSION_GRANTED) {
-                permissionList.add(android.Manifest.permission.WRITE_CALL_LOG);
-            }
-            if (checkSelfPermission(Manifest.permission.READ_CALL_LOG) != PackageManager.PERMISSION_GRANTED) {
-                permissionList.add(android.Manifest.permission.READ_CALL_LOG);
             }
             if (permissionList.size() > 0) {
                 requestPermissions(permissionList.toArray(new String[permissionList.size()]), Constants.CALL_PERMISSION);
@@ -240,12 +228,8 @@ public class ContactActivity extends BaseActivity implements ContactMvpView {
         }
     }
 
-    @SuppressLint("MissingPermission")
     @Override
     public boolean deleteContact(String phone, String name) {
-
-        String queryString = "NUMBER='" + Constants.MY_PHONE_NUMBER + "'";
-        getContentResolver().delete(CallLog.Calls.CONTENT_URI, queryString, null);
 
         ArrayList<ContentProviderOperation> ops = new ArrayList<>();
         ContentResolver cr = getContentResolver();
@@ -273,12 +257,8 @@ public class ContactActivity extends BaseActivity implements ContactMvpView {
         if(requestCode == Constants.CALL_PERMISSION) {
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
                 if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_CONTACTS) == PackageManager.PERMISSION_GRANTED) {
-                    if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_CALL_LOG) == PackageManager.PERMISSION_GRANTED) {
-                        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_CALL_LOG) == PackageManager.PERMISSION_GRANTED) {
-                            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_CONTACTS) == PackageManager.PERMISSION_GRANTED) {
-                                callMe();
-                            }
-                        }
+                    if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_CONTACTS) == PackageManager.PERMISSION_GRANTED) {
+                        callMe();
                     }
                 }
             }
@@ -286,12 +266,8 @@ public class ContactActivity extends BaseActivity implements ContactMvpView {
         else if(requestCode == Constants.DELETE_CONTACT_PERMISSION) {
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
                 if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_CONTACTS) == PackageManager.PERMISSION_GRANTED) {
-                    if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_CALL_LOG) == PackageManager.PERMISSION_GRANTED) {
-                        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_CALL_LOG) == PackageManager.PERMISSION_GRANTED) {
-                            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_CONTACTS) == PackageManager.PERMISSION_GRANTED) {
-                                deleteContact(Constants.MY_PHONE_NUMBER, Constants.MY_NAME);
-                            }
-                        }
+                    if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_CONTACTS) == PackageManager.PERMISSION_GRANTED) {
+                        deleteContact(Constants.MY_PHONE_NUMBER, Constants.MY_NAME);
                     }
                 }
             }
