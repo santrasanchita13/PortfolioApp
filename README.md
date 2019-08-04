@@ -11,8 +11,6 @@ https://play.google.com/store/apps/details?id=com.santra.sanchita.portfolioapp
 
 Email - pakhi.this@gmail.com
 
-Mob - 9002006213
-
 ![screenshot](https://github.com/santrasanchita13/PortfolioApp/blob/master/Screenshot_20180214-124522.jpg)
 
 ![screenshot](https://github.com/santrasanchita13/PortfolioApp/blob/master/Screenshot_20180214-124533.jpg)
